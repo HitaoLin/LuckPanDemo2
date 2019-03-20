@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <tech.oom.luckpan.NewLuckView
+        android:id="@+id/luck_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:luck_indicator_drawable="@mipmap/ic_launcher"
+        app:luck_indicator_height_ratio="0.3"
+        app:luck_indicator_width_ratio="0.208"
+        app:luck_text_offset_ratio="0.8"
+        app:luck_text_color="@color/colorAccent"
+        app:luck_cycle_millis="500"
+        app:luck_even_sector_color="@color/colorPrimary" />
+    <!-- app:luck_cycle_millis 转速-->
+    <Button
+        android:id="@+id/bt_winning_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/luck_button_bg"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFE514E"
+        android:text="中奖记录"
+        android:textSize="25dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"/>
+
+
+</LinearLayout>
